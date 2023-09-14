@@ -3,8 +3,9 @@ import React from 'react'
 import lightbulb from '../../public/lightbulb.png'
 
 const PictureFrame = () => {
+
   return (
-    <div className='h-96'>
+    <div className='w-1/2 h-auto'>
       <Image src={lightbulb}
                 alt="lightbulb"
                 className="h-full w-auto "

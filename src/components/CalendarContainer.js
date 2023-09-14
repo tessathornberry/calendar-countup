@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useRef, useState} from 'react'
 import PictureFrame from './PictureFrame'
 import PoemContainer from './PoemContainer'
 
 const CalendarContainer = () => {
+  const Ref = useRef(null);
+  const [timer, setTimer] = useState(new Date().getSeconds());
+
+
   //the w-1/2 makes this flexible to an extent
   return (
     <div
