@@ -20,7 +20,7 @@ const CalendarContainer = () => {
   //the w-1/2 makes this flexible to an extent
   return (
     <div
-    className='flex-col items-center border-solid border-2 rounded border-black p-3 bg-white min-w-fit'>
+    className='w-3/5 flex-col items-center border-solid border-8 rounded-xl border-black p-3 bg-white'>
 
       <h2 className='flex border-b-2 border-black w-auto justify-center sm:hidden'>Crow Seconds</h2>
       <h2 className='w-auto justify-center hidden sm:flex'>Crow </h2>

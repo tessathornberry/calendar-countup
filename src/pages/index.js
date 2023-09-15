@@ -16,7 +16,7 @@ export default function Home() {
         />
       </Head>
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex flex-col min-h-screen items-center justify-between p-12 ${inter.className}`}
     >
    <CalendarContainer />
     </main>
