@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>Calendar Countup</title>
+        <title>Crow Seconds</title>
         <meta
           name="description"
-          content="A calendar countup with different words and pictures for each day"
+          content="A practice app showing the current seconds on the clock, but with CROWS"
         />
       </Head>
     <main

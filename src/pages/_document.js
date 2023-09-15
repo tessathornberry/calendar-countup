@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/calendar-icon.png" />
+        <link rel="icon" href="/crow-icon.png" />
       </Head>
       <body>
         <Main />
