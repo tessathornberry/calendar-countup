@@ -1,17 +1,30 @@
 import Image from 'next/image'
 import React from 'react'
 import lightbulb from '../../public/lightbulb.png'
+import noCrows from '../../public/0crows.png'
+import { supplyPhoto } from '@/scripts/tools'
 
-const PictureFrame = () => {
+const PictureFrame = ({seconds}) => {
+  if (seconds === 0) {
+    seconds = "00";
+  } else if (seconds < 10) {
+    seconds = `0${seconds}`
+  } else {
+    seconds += "";
+  }
 
   return (
-    <div className='w-1/2 h-auto'>
-      <Image src={lightbulb}
-                alt="lightbulb"
-                className="h-full w-auto "
-                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+    <div className='flex w-full h-auto p-4 justify-center'>
+      <Image src={supplyPhoto(seconds[0])}
+                alt="number of seconds in crows: ones"
+                className="flex h-full w-1/2 pr-2"
                 priority
               />
+              <Image src={supplyPhoto(seconds[1])}
+              alt="number of seconds in crows: ones"
+              className="flex h-full w-1/2 pl-2"
+              priority
+            />
     </div>
   )
 }
