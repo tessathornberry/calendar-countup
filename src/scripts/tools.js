@@ -42,3 +42,9 @@ export const supplyPhoto = (digit) =>{
     return NineCrows;
   }
 }
+
+// export const supplyPhoto = (digit) =>{
+
+//     return `/public/${digit}crows.png`;
+
+// }
