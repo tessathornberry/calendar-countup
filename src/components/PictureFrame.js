@@ -14,15 +14,15 @@ const PictureFrame = ({seconds}) => {
   }
 
   return (
-    <div className='flex w-full h-auto p-4 max-w-s justify-center'>
+    <div className='flex w-full h-auto pb-2 max-w-s justify-center'>
       <Image src={supplyPhoto(seconds[0])}
                 alt="number of seconds in crows: ones"
-                className="flex h-full w-1/3 mr-2 border-4 border-black sm:rounded-xl rounded-2xl"
+                className="flex h-full w-1/2 mr-2 border-2 border-black sm:rounded-xl rounded-2xl"
                 priority
               />
               <Image src={supplyPhoto(seconds[1])}
               alt="number of seconds in crows: ones"
-              className="flex h-full w-1/3 ml-2 border-4 border-black sm:rounded-xl rounded-2xl"
+              className="flex h-full w-1/2 ml-2 border-2 border-black sm:rounded-xl rounded-2xl"
               priority
             />
     </div>
