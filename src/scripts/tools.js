@@ -9,36 +9,20 @@ import SevenCrows from '../../public/7crows.png';
 import EightCrows from '../../public/8crows.png';
 import NineCrows from '../../public/9crows.png';
 
+const crowImages = {
+  '0': NoCrows,
+  '1': OneCrows,
+  '2': TwoCrows,
+  '3': ThreeCrows,
+  '4': FourCrows,
+  '5': FiveCrows,
+  '6': SixCrows,
+  '7': SevenCrows,
+  '8': EightCrows,
+  '9': NineCrows
+}
+
 export const supplyPhoto = (digit) =>{
 
-  if (digit === "0") {
-    return NoCrows;
-  }
-  if (digit === "1") {
-    return OneCrows;
-  }
-  if (digit === "2") {
-    return TwoCrows;
-  }
-  if (digit === "3") {
-    return ThreeCrows;
-  }
-  if (digit === "4") {
-    return FourCrows;
-  }
-  if (digit === "5") {
-    return FiveCrows;
-  }
-  if (digit === "6") {
-    return SixCrows;
-  }
-  if (digit === "7") {
-    return SevenCrows;
-  }
-  if (digit === "8") {
-    return EightCrows;
-  }
-  if (digit === "9") {
-    return NineCrows;
-  }
+  return crowImages[digit];
 }
