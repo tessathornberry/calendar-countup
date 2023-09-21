@@ -22,7 +22,6 @@ const crowImages = {
   '9': NineCrows
 }
 
-export const supplyPhoto = (digit) =>{
-
+export const supplyPhoto = (digit) => {
   return crowImages[digit];
 }

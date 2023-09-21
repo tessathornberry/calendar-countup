@@ -1,1 +1,33 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
 node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# Ignore all .env files except .env.example
+.env*
+!.env.example
+
+# CSS declarations
+*.css.d.ts
+
+# misc
+.DS_Store
+.vscode
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.tsbuildinfo
+
+.next
+next-env.d.ts
+.history
+
+.nsm
